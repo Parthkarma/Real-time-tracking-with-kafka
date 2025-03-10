@@ -9,7 +9,6 @@ This project implements a real-time tracking system utilizing Apache Kafka for m
 ## Features
 
 - **Real-time Location Tracking**: Monitor delivery personnel location in real-time
-- **Status Updates**: Receive immediate notifications about delivery status changes
 - **Delivery ETA**: Calculate and update estimated time of arrival
 - 
 ## Architecture
