@@ -11,10 +11,7 @@ This project implements a real-time tracking system utilizing Apache Kafka for m
 - **Real-time Location Tracking**: Monitor delivery personnel location in real-time
 - **Status Updates**: Receive immediate notifications about delivery status changes
 - **Delivery ETA**: Calculate and update estimated time of arrival
-- **Geofencing**: Get notifications when deliveries enter specific geographical zones
-- **Historical Data**: Access past delivery routes and performance metrics
-- **Multi-platform Support**: Track deliveries across web and mobile interfaces
-
+- 
 ## Architecture
 
 The system is built on a microservices architecture with these key components:
@@ -22,19 +19,13 @@ The system is built on a microservices architecture with these key components:
 1. **Delivery Service**: Mobile application for delivery personnel to broadcast location and status
 2. **Kafka Message Broker**: Central streaming platform for real-time data distribution
 3. **Tracking Service**: Processes and enriches location data streams
-4. **End User Application**: Web/mobile interfaces for customers to track their deliveries
-5. **Analytics Service**: Processes delivery data for business intelligence
-
+   
 ![Architecture Diagram](https://via.placeholder.com/800x400)
 
 ## Technology Stack
 
 - **Messaging**: Apache Kafka, Kafka Streams
-- **Backend**: Spring Boot, Spring Cloud Stream
-- **Frontend**: React.js for web, React Native for mobile
-- **Database**: MongoDB (for delivery data), PostgreSQL (for user management)
-- **DevOps**: Docker, Kubernetes
-- **Monitoring**: Prometheus, Grafana
+
 
 ## Prerequisites
 
@@ -125,26 +116,6 @@ The web application will be available at `http://localhost:3000`
   - Delivery history
   - Rating and feedback system
 
-## API Endpoints
-
-### Tracking API
-
-- `GET /api/tracking/{deliveryId}` - Get current location and status
-- `GET /api/tracking/{deliveryId}/history` - Get location history
-- `POST /api/tracking/callback` - Webhook for external tracking updates
-
-### Delivery API
-
-- `POST /api/deliveries` - Create new delivery
-- `PUT /api/deliveries/{id}/status` - Update delivery status
-- `GET /api/deliveries/ongoing` - Get all ongoing deliveries
-- `GET /api/deliveries/stats` - Get delivery statistics
-
-### User API
-
-- `GET /api/users/{id}/deliveries` - Get user's deliveries
-- `POST /api/users/{id}/notifications/settings` - Update notification preferences
-- `GET /api/users/{id}/stats` - Get user-specific statistics
 
 ## Kafka Topics
 
@@ -192,21 +163,6 @@ docker-compose push
 kubectl apply -f kubernetes/
 ```
 
-## Monitoring
-
-The system includes comprehensive monitoring:
-
-- **Prometheus metrics** for system performance
-- **Grafana dashboards** for visualization
-- **Alerting** for system outages or anomalies
-
-Access the monitoring dashboard at `http://localhost:3000/grafana`
-
-## Screenshots
-
-![Delivery Tracking Map](https://via.placeholder.com/800x400)
-![Delivery Status Dashboard](https://via.placeholder.com/800x400)
-![Mobile App Interface](https://via.placeholder.com/400x800)
 
 ## Contributing
 
@@ -230,6 +186,3 @@ Project Link: [https://github.com/Parthkarma/Real-time-tracking-with-kafka](http
 
 - [Apache Kafka](https://kafka.apache.org/)
 - [Spring Boot](https://spring.io/projects/spring-boot)
-- [React](https://reactjs.org/)
-- [MongoDB](https://www.mongodb.com/)
-- [Docker](https://www.docker.com/)
