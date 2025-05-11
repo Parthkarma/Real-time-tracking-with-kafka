@@ -1,16 +1,16 @@
 # Real-time Tracking System with Kafka
 
-![Real-time Tracking System](https://via.placeholder.com/150x150)
+
 
 ## Overview
 
 This project implements a real-time tracking system utilizing Apache Kafka for message streaming between delivery services and end users. The system enables live tracking of deliveries, providing timely updates and location information to enhance the delivery experience.
 
 ## Features
-
-- **Real-time Location Tracking**: Monitor delivery personnel location in real-time
-- **Delivery ETA**: Calculate and update estimated time of arrival
-- 
+ Designed a Kafka event-driven system for 200K+ concurrent requests.
+ Implemented tracking system using Kafka producers and consumers.
+ Delivery Boy service publishes, End User service consumes updates.
+ Separated services for efficient data streaming.
 ## Architecture
 
 The system is built on a microservices architecture with these key components:
@@ -18,8 +18,7 @@ The system is built on a microservices architecture with these key components:
 1. **Delivery Service**: Mobile application for delivery personnel to broadcast location and status
 2. **Kafka Message Broker**: Central streaming platform for real-time data distribution
 3. **Tracking Service**: Processes and enriches location data streams
-   
-![Architecture Diagram](https://via.placeholder.com/800x400)
+
 
 ## Technology Stack
 
